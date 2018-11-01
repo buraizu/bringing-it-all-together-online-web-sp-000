@@ -65,7 +65,7 @@ class Dog
   end
 
   def self.new_from_db(array)
-    binding.pry
+    self.find_or_create_by(array[1], array[2])
 
 
   end
