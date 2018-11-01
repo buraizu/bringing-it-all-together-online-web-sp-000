@@ -51,7 +51,7 @@ class Dog
     sql = "SELECT * FROM dogs WHERE id = ?"
     result = DB[:conn].execute(sql, id)[0]
 
-    d = self.new
+    d = Dog.new
     binding.pry
 
   end
