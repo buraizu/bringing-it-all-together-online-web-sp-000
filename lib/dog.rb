@@ -6,7 +6,7 @@ class Dog
   def initialize(id=nil, attributes)
     @id = id
       attributes.each {|key, value| self.send(("#{key}="), value)}
-    end
+    
   end
 
 
