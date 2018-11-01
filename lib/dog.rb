@@ -65,7 +65,7 @@ class Dog
   end
 
   def self.new_from_db(array)
-    self.find_or_create_by(array[1], array[2])
+    
 
 
   end
