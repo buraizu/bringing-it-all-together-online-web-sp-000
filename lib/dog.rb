@@ -64,11 +64,11 @@ class Dog
     dog
   end
 
-  # def self.new_from_db(array)
-  #
-  #
-  #
-  # end
+  def self.new_from_db(array)
+    binding.pry
+  
+  
+  end
 
 
   def update
