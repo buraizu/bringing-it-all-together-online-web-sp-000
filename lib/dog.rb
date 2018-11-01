@@ -38,7 +38,7 @@ class Dog
 
   def self.new_from_db(array)
 
-    return_dog = self.new(array[0], array[1])
+    
 
   end
 
