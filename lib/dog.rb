@@ -8,7 +8,7 @@ class Dog
       attributes.each do |key, value|
         self.send(("#{key}="), value)
       end
-    
+
   end
 
 
