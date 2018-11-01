@@ -72,7 +72,7 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ?"
     result = DB[:conn].execute(sql, name)[0]
     self.new(name: result[1], breed: result[2], id: result[0])
-  end 
+  end
 
 
   def update
