@@ -37,8 +37,8 @@ class Dog
   # end
 
   def self.new_from_db(array)
-    binding.pry
-    return_dog = self.new(array[0], array[1], array[2])
+  
+    return_dog = self.new(array[0], array[1])
 
   end
 
