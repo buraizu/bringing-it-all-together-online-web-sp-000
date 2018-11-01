@@ -27,6 +27,8 @@ class Dog
     DB[:conn].execute(sql)
   end
 
+
+
   def save
     sql = <<-SQL
       INSERT INTO dogs (name, breed)
@@ -36,12 +38,23 @@ class Dog
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
   end
 
-  def self.new_from_db(array)
 
-    
 
+
+
+
+
+  # def self.new_from_db(array)
+  # 
+  # 
+  # 
+  # end
+
+
+  def update
+    sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.breed, self.id)
   end
-
 
 
 end
